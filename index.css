@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 100px;
+  }
+  
+  .nav-items > ul {
+    font-weight: 400;
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-items > ul > li {
+    font-style: italic;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+  }
