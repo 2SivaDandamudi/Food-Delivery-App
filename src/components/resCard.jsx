@@ -10,7 +10,7 @@ const ResCard = ({resData}) => {
             <h3>{cuisines.join(", ")}</h3>
             <h3>{avgRatingString}</h3>
             <h3>{costForTwo}</h3>
-            <h3>{sla.deliveryTime}</h3>
+            <h3>{sla.deliveryTime} Minutes</h3>
         </div>
     )
 }
