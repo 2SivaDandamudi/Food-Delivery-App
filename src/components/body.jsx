@@ -10,7 +10,6 @@ const Body = () => {
         setData(topRatedList)
     }
      
-
     return(
         <div className="body">
             <div className="filter">
