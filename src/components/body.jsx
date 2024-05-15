@@ -4,16 +4,28 @@ import resList from "../../utils/mockData";
 
 const Body = () => {
     const [data, setData] = useState(resList)
+    const [isFilter, setIsFilter] = useState([...resList])
 
-    const handledTopRated = () => {
+    const handleTopRated = () => {
         const topRatedList = data.filter((res)=> res.info.avgRatingString > 4)
         setData(topRatedList)
     }
-     
+    
+	const clearSelection = () => {
+		setData(resList)
+	}
+
     return(
         <div className="body">
             <div className="filter">
-            <button className="top-rated"   onClick={handledTopRated}>Top Rated</button>
+                <div>
+            <button className="top-rated"   onClick={handleTopRated}>Top Rated</button>
+            <button className="clear-btn" onClick={clearSelection}>Clear Filter</button>
+            </div>
+            <div className="search">
+                <input className="search-field" placeholder="Search Item" ></input>
+                <button className="search-btn">search</button>
+            </div>
             </div>
             <div className="res-container">
                 {data.map((res) =>
