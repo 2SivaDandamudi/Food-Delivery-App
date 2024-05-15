@@ -6,6 +6,7 @@ const Body = () => {
     return(
         <div className="body">
             <div className="filter">
+            <button className="top-rated" onClick={handleTopRated()}>Top Rated</button>
             </div>
             <div className="res-container">
                 {resList.map((res) =>
