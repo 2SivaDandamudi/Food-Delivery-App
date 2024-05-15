@@ -21,3 +21,42 @@
     padding: 10px;
     margin: 10px;
   }
+  
+  .res-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .res-card {
+    background-color: #e8f5ec;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .res-card:hover {
+    cursor: pointer;
+    border: 3px solid rgb(23, 24, 23);
+  }
+  
+  .res-logo {
+    padding: 2px;
+    width: 190px;
+    height: 130px;
+    border-radius: 20px;
+    border: 1px solid rgb(126, 123, 123);
+  }
+  
+  .footer-container {
+    border: 1.5px solid black;
+    align-content: baseline;
+  }
+  
+  .footer {
+    display: flex;
+    align-content: center;
+    margin: 5px;
+  }
+  
