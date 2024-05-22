@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider, Outlet, createRoutesFromChildren, 
 import About from "./components/about.jsx";
 import Error from "./components/error";
 import Contact from "./components/contact.jsx";
+import RestaurantMenu from "./components/restaurantmenu.jsx";
 
 const App =() => {
     return(
@@ -23,6 +24,7 @@ const appRouter = createBrowserRouter(
         <Route path="/" element={<Body/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/restaurant/:resId" element={<RestaurantMenu />} />
     </Route>
 ) 
 //     [
