@@ -120,3 +120,11 @@
     cursor: pointer;
     border: 3px solid rgb(9, 175, 204);
   }
+
+  .user-card{
+    margin: 5px;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid black;
+
+  }

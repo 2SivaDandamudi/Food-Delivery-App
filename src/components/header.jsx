@@ -19,18 +19,18 @@ const Header = () => {
             <div className="nav-items">
                 <ul>
                     <button className="login" onClick={handleLogin}>{login}</button>
-                    <li>
-                        <Link to='/'>
+                    <li> 
+                        <Link to='/' style={{ textDecoration: 'none' }}>
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about" >
+                        <Link to="/about" style={{ textDecoration: 'none' }}>
                             About Us
                         </Link>
                     </li>
                     <li>
-                        <Link to="/contact">
+                        <Link to="/contact" style={{ textDecoration: 'none' }}>
                             Contact Us
                         </Link>
                     </li>
